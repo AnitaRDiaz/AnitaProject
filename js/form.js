@@ -1,14 +1,14 @@
 document.querySelector("#submit").addEventListener("click", e => {
   e.preventDefault();
 
-  //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
+  
   let telefono = "+525540428175";
 
   let cliente = document.querySelector("#cliente").value;
   let fecha = document.querySelector("#fecha").value;
 
-  let empleado = document.querySelector("#empleado").value;
-  let servicio = document.querySelector("#servicio").value;
+  let producto = document.querySelector("#producto").value;
+  let cantidad = document.querySelector("#cantidad").value;
   let resp = document.querySelector("#respuesta");
 
   resp.classList.remove("fail");
@@ -23,9 +23,9 @@ document.querySelector("#submit").addEventListener("click", e => {
 		${fecha}%0A
 		*Producto:*%0A
 	
-		${empleado}%0A
+		${producto}%0A
 		*¿Cantidad?*%0A
-		${servicio}`;
+		${cantidad}`;
 
   if (cliente === "" || fecha === "" ) {
     resp.classList.add("fail");
