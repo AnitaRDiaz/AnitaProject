@@ -41,10 +41,10 @@
 
   
 
-      <label for="empleado" class="formulario__label"
+      <label for="producto" class="formulario__label"
         >Tamaño</label
       >
-      <select id="empleado" name="listaempleados" class="formulario__input">
+      <select id="producto" name="listaempleados" class="formulario__input">
         <option>Lata chica de 500ml $25</option>
         <option>Coca cola mediana mini 250 ml $40</option>
         <option>Coca cola chica de 330 ml $15</option>
@@ -55,16 +55,12 @@
         <option>Coca Cola 237ml $45</option>
       </select>
 
-      <label for="servicio" class="formulario__label"
+      <label for="cantidad" class="formulario__label"
         >Cantidad</label
       >
-      <select id="servicio" name="listaservicios" class="formulario__input">
-        <option> 1 - </option>
-        <option> 2 -</option>
-        <option> 3 -</option>
-        <option> 4 - </option>
-        <option>5 - </option>
-      </select>
+      <input type="number" id="cantidad" name="cantidad"
+       min="10" max="100">
+    
 
       <div id="respuesta"></div>
 
@@ -73,3 +69,4 @@
     <script src="js/form.js"></script>
   </body>
 </html>
+
